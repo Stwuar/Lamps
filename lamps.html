@@ -123,3 +123,36 @@
         top: 50%;
         z-index: -10;
     }
+    .bubble1 {
+        tranform-origin: 30% 50%;
+        animation: bubbly 15s ease infinite;
+    }
+
+    .bubble2 {
+        tranform-origin: 10% 70%;
+        animation: bubbly 10s ease-in-out infinite;
+    }
+
+    .bubble3 {
+        tranform-origin: 50% 30%;
+        animation: bubbly 12s linear infinite;
+    }
+
+    @keyframes move {
+        0% {
+            transform: scale(0.25) translate(10px, -30px);
+        }
+
+        40% {
+            transform: scale(0.35, 0.45) translate(180px, 300px) rotate(180deg);
+        }
+
+        80% {
+            transform: scale(0.35) translate(0, 50px) rotate(-20deg);
+        }
+
+        100% {
+            transform: scale(0.25) translate(10px, -30px);
+        }
+    }
+
